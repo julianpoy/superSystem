@@ -8,14 +8,28 @@ let win
 
 function createWindow () {
   // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 600})
+  win = new BrowserWindow({width: 800, height: 600});
+
+  //Check for dev cli flag
+  console.log(process.argv);
+  let electronUrl = '';
+  if(process.argv &&
+    process.argv.includes('--dev')) {
+        electronUrl = url.format({
+           pathname: path.join('localhost:4200'),
+           protocol: 'http:',
+           slashes: true
+       })
+    } else {
+        electronUrl = url.format({
+           pathname: path.join(__dirname, 'dist/index.html'),
+           protocol: 'file:',
+           slashes: true
+       })
+    }
 
   // and load the index.html of the app.
-  win.loadURL(url.format({
-    pathname: path.join(__dirname, 'dist/index.html'),
-    protocol: 'file:',
-    slashes: true
-  }))
+  win.loadURL(electronUrl);
 
   // Open the DevTools.
   win.webContents.openDevTools()

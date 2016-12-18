@@ -5,6 +5,7 @@
   "main": "main.js",
   "angular-cli": {},
   "scripts": {
+    "electron-start": "ng build && electron .",
     "start": "ng serve",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
