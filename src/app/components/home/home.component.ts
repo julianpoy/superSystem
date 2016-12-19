@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+//Import components
+import { SystemNavComponent } from '../system-nav/system-nav.component';
+
 @Component({
-  selector: 'app-home',
+  selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

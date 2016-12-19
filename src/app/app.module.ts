@@ -10,6 +10,12 @@ import { AppComponent } from './app.component';
 //Our Page components
 import { HomeComponent } from './components/home/home.component';
 
+//Our Directive components
+import { SystemNavComponent } from './components/system-nav/system-nav.component';
+
+//Our Pipes
+import { JsonNgforPipe } from './pipes/json-ngfor.pipe';
+
 //Declare our routes
 //https://angular.io/docs/ts/latest/guide/router.html
 const appRoutes: Routes = [
@@ -19,7 +25,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SystemNavComponent,
+    JsonNgforPipe
   ],
   imports: [
     BrowserModule,
