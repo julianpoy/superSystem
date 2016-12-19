@@ -1,3 +1,8 @@
-.homeText {
-    color: blue;
+.c-home {
+    @include element('title') {
+        margin: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
 }
