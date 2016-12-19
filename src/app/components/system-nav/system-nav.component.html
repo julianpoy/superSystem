@@ -1,6 +1,7 @@
 <div class="c-system-nav">
     <!-- Ng repeat for all available emulators -->
-    <button *ngFor="let system of mockData | jsonNgfor">
+    <button *ngFor="let system of mockData | jsonNgfor"
+        class="c-system-nav__system">
         {{system.value.name}}
     </button>
 </div>

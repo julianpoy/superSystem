@@ -5,8 +5,7 @@ import { SystemNavComponent } from '../system-nav/system-nav.component';
 
 @Component({
   selector: 'home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './home.component.html'
 })
 export class HomeComponent implements OnInit {
 

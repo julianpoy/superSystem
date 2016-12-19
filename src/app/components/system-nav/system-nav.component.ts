@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'system-nav',
-  templateUrl: './system-nav.component.html',
-  styleUrls: ['./system-nav.component.scss']
+  templateUrl: './system-nav.component.html'
 })
 export class SystemNavComponent implements OnInit {
 

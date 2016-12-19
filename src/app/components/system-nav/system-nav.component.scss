@@ -1,0 +1,14 @@
+.c-system-nav {
+    @extend .center-text;
+
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    //The system element
+    @include element('system') {
+        width: 100%;
+        background-color: $transparent-50;
+        color: $inverse;
+    }
+}

@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Import some Sass libs
+@import './bem';
+@import './animate';
+
+//Import helper classes and variables
+@import './variables';
+@import './general';
+
+//Import App Component sass
+@import '../app/app.component';

@@ -1,0 +1,10 @@
+//General Classes we can use app wide
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    @extend .center;
+    text-align: center;
+}
