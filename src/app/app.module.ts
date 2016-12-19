@@ -10,6 +10,9 @@ import { AppComponent } from './app.component';
 //Our Page components
 import { HomeComponent } from './components/home/home.component';
 
+import { FileScraperService } from './services/file-scraper/file-scraper.service';
+import { EmulatorsService } from './services/emulators/emulators.service';
+
 //Declare our routes
 //https://angular.io/docs/ts/latest/guide/router.html
 const appRoutes: Routes = [
@@ -30,7 +33,7 @@ const appRoutes: Routes = [
   exports: [
       RouterModule
   ],
-  providers: [],
+  providers: [FileScraperService, EmulatorsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
